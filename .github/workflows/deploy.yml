@@ -23,8 +23,7 @@ jobs:
           python -m pip install --upgrade pip
 
       - name: Zip Lambda function
-        run: |
-          run: zip -r lambda_function.zip lambda_function.py
+        run: zip -r lambda_function.zip lambda_function.py
 
       - name: Deploy to AWS Lambda
         uses: appleboy/lambda-action@master
